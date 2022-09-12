@@ -6,31 +6,111 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="10dp"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTo"
+        android:id="@+id/editTextGravityTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="To"
-        android:inputType="textPersonName" />
+        android:gravity="top"
+        android:layout_weight="1"
+        android:hint="top"
+        android:inputType="text" />
 
     <EditText
-        android:id="@+id/editTextMessage"
+        android:id="@+id/editTextGravityBottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:gravity="bottom"
         android:layout_weight="1"
-        android:hint="Message"
+        android:hint="bottom"
         android:inputType="text" />
-    <Button
-        android:id="@+id/btnSend"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/editTextGravityStart"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send"
-        />
+        android:ems="10"
+        android:gravity="start"
+        android:layout_weight="1"
+        android:hint="start"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextGravityEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="end"
+        android:layout_weight="1"
+        android:hint="end"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextGravityCenterVertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:hint="center_vertical"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextGravityCenterHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:hint="center_horizontal"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextGravityCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:hint="center"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextGravityFillVertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="fill_vertical"
+        android:layout_weight="1"
+        android:hint="fill_vertical"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextGravityFillHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="fill_horizontal"
+        android:layout_weight="1"
+        android:hint="fill_horizontal"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextGravityFill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="fill"
+        android:layout_weight="1"
+        android:hint="fill"
+        android:inputType="text" />
+
+
+
+
 
 
 </LinearLayout>
