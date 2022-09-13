@@ -12,14 +12,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        if(savedInstanceState != null){
-            savedInstanceState.getInt()
-        }
-    }
-
-    public void onClickStart(View view) {
-        TextView timerText = findViewById(R.id.textTime);
-
     }
 }
