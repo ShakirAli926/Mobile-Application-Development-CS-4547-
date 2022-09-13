@@ -20,6 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:gravity="top|start"
         android:layout_weight="1"
         android:hint="Message"
         android:inputType="text" />
@@ -27,6 +28,9 @@
         android:id="@+id/btnSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginLeft="8dp"
+        android:layout_marginVertical="8dp"
         android:text="Send"
         />
 

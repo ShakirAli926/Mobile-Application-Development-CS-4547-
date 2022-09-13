@@ -1,0 +1,6 @@
+setContentView() : This method converts the views layout's XML to object.
+	 This process is called layout inflation because it inflates each view into an object.
+linear layout VS frame layout
+ 	Linear layout arranges its views in a single row or column. Each view is allocated its own space on the screen, and they don’t overlap one another. But in frame 	layout, the objects can overlap the components.Instead of displaying its views in a single row or column, it stacks them, one on top of another. It’s often used to 	hold just a single view. 
+
+

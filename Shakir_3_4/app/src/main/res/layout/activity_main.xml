@@ -17,6 +17,7 @@
         android:gravity="top"
         android:layout_weight="1"
         android:hint="top"
+        android:autofillHints="text Autofill"
         android:inputType="text" />
 
     <EditText
@@ -108,9 +109,12 @@
         android:hint="fill"
         android:inputType="text" />
 
-
-
-
-
+    <Button
+        android:id="@+id/btn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Send"
+        android:layout_marginHorizontal="20dp"
+        />
 
 </LinearLayout>
