@@ -50,7 +50,6 @@ public class StopwatchActivity extends AppCompatActivity {
                 if(running){
                     seconds++;
                 }
-
                 handler.postDelayed(this,1000);
 //               postDelay, runs this method after some delays (milliseconds).
             }
