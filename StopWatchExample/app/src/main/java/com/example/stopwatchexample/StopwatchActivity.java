@@ -12,13 +12,43 @@ public class StopwatchActivity extends AppCompatActivity {
 
     private int seconds = 0; // Its a counter
     private boolean running ; // State for the time to check whether the watch is running of not.
-
+    private boolean wasRunning;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stopwatch);
+        if(savedInstanceState !=null){
+            seconds = savedInstanceState.getInt("seconds");
+            running = savedInstanceState.getBoolean("running");
+            wasRunning = savedInstanceState.getBoolean("wasRunning");
+        }
         runTimer();
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle saveInstanceState) {
+        super.onSaveInstanceState(saveInstanceState);
+        saveInstanceState.putInt("seconds", seconds);
+        saveInstanceState.putBoolean("running", running);
+        saveInstanceState.putBoolean("wasRunning", wasRunning);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        wasRunning = running;
+        running = false;
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(wasRunning){
+            running = true;
+        }
+    }
+
 
     public void onClickStart(View view) {
         running = true;
@@ -33,6 +63,8 @@ public class StopwatchActivity extends AppCompatActivity {
         running = false;
         seconds = 0;
     }
+
+
 
         private void runTimer(){
         final TextView timeView = findViewById(R.id.textTime);
