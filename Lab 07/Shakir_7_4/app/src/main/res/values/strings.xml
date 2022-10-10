@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Shakir_7_4</string>
+    <string name="send">Send</string>
+    <string name="hint">Enter message</string>
+</resources>
