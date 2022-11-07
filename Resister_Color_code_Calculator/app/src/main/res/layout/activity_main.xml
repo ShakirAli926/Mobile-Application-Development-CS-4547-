@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Resistor Color Code Calculator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1st Band of Color"
+                android:textStyle="bold"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerBand1Color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/bandsColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2nd Band of Color"
+                android:textStyle="bold"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerBand2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/bandsColor" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Multiplier"
+                android:textStyle="bold"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerMultiplier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/bandsColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tolerance"
+                android:textStyle="bold"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerTolerance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/bandsColor" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:onClick="onClickCalculate"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
