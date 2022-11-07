@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Shakir_3_1</string>
-    <string name="toMail">To</string>
-    <string name="messageText">Message</string>
-    <string name="btnSend">Send</string>
-</resources>

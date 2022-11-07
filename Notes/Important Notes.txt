@@ -1,0 +1,15 @@
+setContentView() : This method converts the views layout's XML to object.
+	 This process is called layout inflation because it inflates each view into an object.
+linear layout VS frame layout
+ 	Linear layout arranges its views in a single row or column. Each view is allocated its own space on the screen, and they don’t overlap one another. But in frame 	layout, the objects can overlap the components.Instead of displaying its views in a single row or column, it stacks them, one on top of another. It’s often used to 	hold just a single view. 
+
+----------------------------------------------------------
+Chapter : 4 : Introducing the constraint layout
+----------------------------------------------------------
+
+Constraint layouts are part of Android Jetpack.
+	Android Jetpack is a collection of libraries that help you follow best practice, reduce boilerplate code, and make your coding life easier. It includes constraint 	layouts, navigation, the Room persistence library (which helps you build databases) and lots, lots more. 
+Learning about constraint layouts into two main parts
+*  How to position and size a single view. 
+*  How to position and size multiple views.
+
