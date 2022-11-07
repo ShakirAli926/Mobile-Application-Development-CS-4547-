@@ -192,7 +192,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     void getResistance(double multiplier, String toleranceValue){
 
         results = Integer.parseInt(bandsCode) * multiplier;
