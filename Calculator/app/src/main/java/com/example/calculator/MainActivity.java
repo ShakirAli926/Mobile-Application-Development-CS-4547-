@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
-    TextView workingsTV;
+    TextView workingsTextView;
     TextView resultsTV;
 
     String workings = "";
@@ -21,14 +21,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        workingsTV = (TextView) findViewById(R.id.workingTextView);
+        workingsTextView = (TextView) findViewById(R.id.workingTextView);
         resultsTV = (TextView) findViewById(R.id.resultTextView);
     }
 
 
     private void setWorkings(String givenValue) {
-        workings = workings + givenValue;
-        workingsTV.setText(workings);
+        workings += givenValue;
+        workingsTextView.setText(workings);
     }
 
 
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void clearOnClick(View view) {
-        workingsTV.setText("");
+        workingsTextView.setText("");
         workings = "";
         resultsTV.setText("");
         leftBracket = true;
@@ -132,9 +132,7 @@ public class MainActivity extends AppCompatActivity {
     public void timesOnClick(View view) {
         setWorkings("*");
     }
-    public void sqrtOnClick(View view) {
-        setWorkings("√");
-    }
+
 
     public void fourOnClick(View view) {
         setWorkings("4");
