@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bear Adviser</string>
+    <string name="btnFindBear">Find Bear</string>
+    <string name="txt">The King\'s Man Academy</string>
+
+
+
+    <string-array name="list">
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+    </string-array>
+</resources>
